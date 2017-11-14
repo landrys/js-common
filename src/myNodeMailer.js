@@ -2,12 +2,16 @@
 "use strict";
 var nodemailer = require('nodemailer');
 //var privateStuff = require('./private');
+var transporter;
 
-module.exports.transporter = nodemailer.createTransport({
-    host: "smtp.gmail.com",
-    port: 465,
-    secure: true
-});
+module.exports.creatTransporter(creds) {
+    transporter = nodemailer.createTransport({
+        host: "smtp.gmail.com",
+        port: 465,
+        secure: true
+        auth: creds
+    })
+};
 
 module.exports.mailIt = function (to, subject, body) {
     var mailOptions = {
