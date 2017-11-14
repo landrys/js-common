@@ -21,7 +21,7 @@ module.exports.mailIt = function (to, subject, body) {
         text: body
     };
 
-    exports.transporter.sendMail(mailOptions, function (error, info) {
+   transporter.sendMail(mailOptions, function(error, info) {
         if (error) {
             console.log(error);
         } else {
