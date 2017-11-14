@@ -3,7 +3,7 @@
 var nodemailer = require('nodemailer');
 //var privateStuff = require('./private');
 
-mudule.exports.transporter = nodemailer.createTransport({
+module.exports.transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
     port: 465,
     secure: true
