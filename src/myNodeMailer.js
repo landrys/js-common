@@ -4,11 +4,11 @@ var nodemailer = require('nodemailer');
 //var privateStuff = require('./private');
 var transporter;
 
-module.exports.creatTransporter(creds) {
+module.exports.creatTransporter = function(creds) {
     transporter = nodemailer.createTransport({
         host: "smtp.gmail.com",
         port: 465,
-        secure: true
+        secure: true,
         auth: creds
     })
 };
