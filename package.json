@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-dist": "rm -rf dist/* && cp src/myNodeMailer.js dist/."
+    "build-dist": "rm -rf dist/my* && cp src/myNodeMailer.js dist/."
   },
   "repository": {
     "type": "git",
