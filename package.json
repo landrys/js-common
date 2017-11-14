@@ -1,0 +1,28 @@
+{
+  "name": "js-common",
+  "version": "1.0.0",
+  "description": "Common javascript",
+  "main": "dist/myNodeMailer.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-dist": "rm -rf dist/* && cp src/myNodeMailer.js dist/."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/landrys/js-common.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/landrys/js-common/issues"
+  },
+  "homepage": "https://github.com/landrys/js-common#readme",
+  "dependencies": {
+    "nodemailer": "^4.4.0"
+  }
+}
